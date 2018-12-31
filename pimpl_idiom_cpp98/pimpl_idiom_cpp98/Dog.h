@@ -25,11 +25,19 @@ public:
     Dog(int id, int age);
         // ctor with id and age
 
+    Dog(const Dog& rhs);
+        // copy ctor
+
     ~Dog();
         // dtor
 
+    Dog& operator=(const Dog& rhs);
+        // copy assignment
+
     void bark();
         // dog barks
+
+
 
 };
 
